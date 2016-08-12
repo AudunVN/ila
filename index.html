@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Space Northpaw</title>
+		<title>Ila</title>
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -24,7 +24,7 @@
 		<meta name="theme-color" content="#2c5aa0">
 		<style>
 			html {
-				background: #000;
+				background: #7c7c8c;
 			}
 			
 			.backgroundContainer {
@@ -33,236 +33,6 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-			}
-
-			.atmosphere {
-				z-index: 5;
-				/* midnight 0.85, midday 1 */
-				opacity: 0.85;
-				height: 100%;
-				width: 100%;
-				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,00397a+33,00397a+55,346a8e+75,346a8e+92,994638+98&0+0,1+100 */
-				background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 57, 122, 0.33) 33%, rgba(0, 57, 122, 0.55) 55%, rgba(52, 106, 142, 0.75) 75%, rgba(52, 106, 142, 0.92) 92%, rgba(153, 70, 56, 0.98) 98%, rgba(153, 70, 56, 1) 100%);
-				/* FF3.6-15 */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(33%, rgba(0, 57, 122, 0.33)), color-stop(55%, rgba(0, 57, 122, 0.55)), color-stop(75%, rgba(52, 106, 142, 0.75)), color-stop(92%, rgba(52, 106, 142, 0.92)), color-stop(98%, rgba(153, 70, 56, 0.98)), color-stop(100%, rgba(153, 70, 56, 1)));
-				/* Chrome4-9,Safari4-5 */
-				background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 57, 122, 0.33) 33%, rgba(0, 57, 122, 0.55) 55%, rgba(52, 106, 142, 0.75) 75%, rgba(52, 106, 142, 0.92) 92%, rgba(153, 70, 56, 0.98) 98%, rgba(153, 70, 56, 1) 100%);
-				/* Chrome10-25,Safari5.1-6 */
-				background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 57, 122, 0.33) 33%, rgba(0, 57, 122, 0.55) 55%, rgba(52, 106, 142, 0.75) 75%, rgba(52, 106, 142, 0.92) 92%, rgba(153, 70, 56, 0.98) 98%, rgba(153, 70, 56, 1) 100%);
-				/* Opera 11.10-11.50 */
-				background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 57, 122, 0.33) 33%, rgba(0, 57, 122, 0.55) 55%, rgba(52, 106, 142, 0.75) 75%, rgba(52, 106, 142, 0.92) 92%, rgba(153, 70, 56, 0.98) 98%, rgba(153, 70, 56, 1) 100%);
-				/* IE10 preview */
-				background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 57, 122, 0.33) 33%, rgba(0, 57, 122, 0.55) 55%, rgba(52, 106, 142, 0.75) 75%, rgba(52, 106, 142, 0.92) 92%, rgba(153, 70, 56, 0.98) 98%, rgba(153, 70, 56, 1) 100%);
-				/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#994638', GradientType=0);
-				/* IE6-9 */
-			}
-
-			.starfield {
-				background: black;
-				z-index: -999;
-				height: 100%;
-				width: 100%;
-				left: 0;
-				position: absolute;
-				top: 0;
-				right: 0;
-			}
-
-			.starfield .star {
-				position: absolute;
-				z-index: -5;
-				background-color: white;
-				width: 1px;
-				height: 1px;
-				border-radius: 100em !important;
-				box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.1);
-			}
-
-			.star.O {
-				background-color: rgb(173, 216, 230);
-				box-shadow: 0 0 3px 3px rgba(173, 216, 230, 0.1);
-			}
-
-			.star.B {
-				background-color: rgb(137, 137, 255);
-				box-shadow: 0 0 3px 3px rgba(137, 137, 255, 0.1);
-			}
-
-			.star.A {
-				background-color: rgb(88, 249, 255);
-				box-shadow: 0 0 3px 3px rgba(88, 249, 255, 0.1);
-			}
-
-			.star.F {
-				background-color: rgb(255, 255, 255);
-				box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.1);
-			}
-
-			.star.G {
-				background-color: rgb(255, 255, 169);
-				box-shadow: 0 0 3px 3px rgba(255, 255, 169, 0.1);
-			}
-
-			.star.K {
-				background-color: rgb(255, 221, 158);
-				box-shadow: 0 0 3px 3px rgba(255, 221, 158, 0.1);
-			}
-
-			.star.M {
-				background-color: rgb(255, 156, 156);
-				box-shadow: 0 0 1px 1px rgba(255, 156, 156, 0.1);
-			}
-
-			.twinkle {
-				animation: twinkleAnimation ease-in-out 1s;
-				animation-iteration-count: 1;
-				transform-origin: 50% 50%;
-			}
-
-			@keyframes twinkleAnimation {
-				0% {
-					transform: scaleX(1) scaleY(1);
-					-webkit-transform: scaleX(1) scaleY(1);
-				}
-				50% {
-					transform: scaleX(3) scaleY(3);
-					-webkit-transform: scaleX(3) scaleY(3);
-					opacity: 0.7;
-				}
-				100% {
-					transform: scaleX(1) scaleY(1);
-					-webkit-transform: scaleX(1) scaleY(1);
-				}
-			}
-			
-			@-webkit-keyframes twinkleAnimation {
-				0% {
-					transform: scaleX(1) scaleY(1);
-					-webkit-transform: scaleX(1) scaleY(1);
-				}
-				50% {
-					transform: scaleX(3) scaleY(3);
-					-webkit-transform: scaleX(3) scaleY(3);
-					opacity: 0.7;
-				}
-				100% {
-					transform: scaleX(1) scaleY(1);
-					-webkit-transform: scaleX(1) scaleY(1);
-				}
-			}
-
-			.pawPrint div,
-			.pawPrint .toe::after,
-			.pawPrint .toe::before {
-				box-shadow: 0 0 0.25em 0.0em #2C5AA0;
-			}
-
-			.pawPrint div,
-			.pawPrint .toe::after,
-			.pawPrint .toe::before,
-			.corner.topRight::before,
-			.corner.bottomRight::before,
-			.corner.topLeft::before,
-			.corner.bottomLeft::before {
-				background: #2C5AA0;
-				border-right-color: #2C5AA0 !important;
-				border-left-color: #2C5AA0 !important;
-			}
-
-			.outerContainer > .corner,
-			.outerContainer > .edge {
-				/*box-shadow: 0 0 0.5em 0.1em #1A2F5D;*/
-			}
-
-			.innerContainer,
-			.edge,
-			.corner {
-				background: #F9F9F9;
-			}
-
-			.innerContainer {
-				width: 11em;
-				height: 11em;
-				position: absolute;
-				top: 1em;
-				left: 1em;
-			}
-
-			.edge {
-				position: absolute;
-			}
-
-			.edge.left {
-				height: 11em;
-				width: 1em;
-				left: 0;
-				top: 1em;
-			}
-
-			.edge.top {
-				height: 1em;
-				width: 11em;
-				top: 0;
-				left: 1em;
-			}
-
-			.edge.right {
-				height: 11em;
-				width: 1em;
-				right: 0;
-				top: 1em;
-			}
-
-			.edge.bottom {
-				height: 1em;
-				width: 11em;
-				bottom: 0;
-				left: 1em;
-			}
-
-			.corner {
-				width: 1.41421356em;
-				height: 1.41421356em;
-				transform: rotate(45deg);
-				-webkit-transform: rotate(45deg);
-				position: absolute;
-			}
-
-			.corner.topLeft::before,
-			.corner.bottomLeft::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				right: 0;
-				border-top: 1em solid white;
-				border-left: 1em solid red;
-				width: 0;
-			}
-
-			.corner.topRight::before,
-			.corner.bottomRight::before {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				border-bottom: 1em solid white;
-				border-right: 1em solid red;
-				width: 0;
-			}
-
-			.corner.topLeft {
-				top: 0em;
-				left: 1em;
-				transform-origin: 0% 0%;
-				-webkit-transform-origin: 0% 0%;
-			}
-
-			.qrContainer,
-			.imgContainer {
-				display: inline-block;
-				width: 50%;
-				min-width: 500px;
 			}
 			
 			img:not(.loaded), img.unLoaded {
@@ -291,316 +61,6 @@
 				opacity: 1;
 				transition: opacity 0.4s ease;
 				-webkit-transition: opacity 0.4s ease;
-			}
-
-			.corner.topRight {
-				top: 1em;
-				right: 0em;
-				transform-origin: 100% 0%;
-				-webkit-transform-origin: 100% 0%;
-			}
-
-			.corner.bottomLeft {
-				bottom: 1em;
-				left: 0em;
-				transform-origin: 0% 100%;
-				-webkit-transform-origin: 0% 100%;
-			}
-
-			.corner.bottomRight {
-				bottom: 0em;
-				right: 1em;
-				transform-origin: 100% 100%;
-				-webkit-transform-origin: 100% 100%;
-			}
-
-			.pawPrint .toe.one {
-				top: 5em;
-				left: 1em;
-			}
-
-			.pawPrint .toe.two {
-				top: 2em;
-				left: 4em;
-			}
-
-			.pawPrint .toe.three {
-				top: 2em;
-				left: 7em;
-			}
-
-			.pawPrint .toe.four {
-				top: 5em;
-				left: 10em;
-			}
-
-			.pawPrint .toe {
-				width: 2em;
-				height: 2em;
-				position: absolute;
-			}
-
-			.pawPrint .leftPad {
-				width: 4.24264068em;
-				height: 1em;
-				position: absolute;
-				top: 9em;
-				left: 3em;
-				transform-origin: 0% 0%;
-				transform: rotate(-45deg);
-				-webkit-transform-origin: 0% 0%;
-				-webkit-transform: rotate(-45deg);
-			}
-
-			.pawPrint .rightPad {
-				width: 4.24264068em;
-				height: 1em;
-				position: absolute;
-				top: 9em;
-				right: 3em;
-				transform-origin: 100% 0%;
-				transform: rotate(45deg);
-				-webkit-transform-origin: 100% 0%;
-				-webkit-transform: rotate(45deg);
-			}
-
-			.pawPrint .topPad {
-				width: 1em;
-				height: 1em;
-				position: absolute;
-				top: 6em;
-				left: 6em;
-			}
-
-			.pawPrint .bottomCenterPad {
-				width: 1em;
-				height: 1em;
-				position: absolute;
-				bottom: 2em;
-				left: 6em;
-			}
-
-			.pawPrint .bottomLeftPad {
-				width: 1em;
-				height: 1em;
-				position: absolute;
-				bottom: 1em;
-				left: 4em;
-			}
-
-			.pawPrint .bottomRightPad {
-				width: 1em;
-				height: 1em;
-				position: absolute;
-				bottom: 1em;
-				right: 4em;
-			}
-
-			.pawPrint .bottomLeftWallPad {
-				width: 1em;
-				height: 2em;
-				position: absolute;
-				bottom: 2em;
-				left: 3em;
-			}
-
-			.pawPrint .bottomRightWallPad {
-				width: 1em;
-				height: 2em;
-				position: absolute;
-				bottom: 2em;
-				right: 3em;
-			}
-
-			.pawPrint .bottomCenterPad {
-				width: 1em;
-				height: 1em;
-				position: absolute;
-				bottom: 2em;
-				left: 6em;
-			}
-
-			.pawPrint .corner {
-				width: 1.41421356em;
-				height: 1.41421356em;
-				transform: rotate(45deg);
-				position: absolute;
-				transform-origin: 0% 0%;
-				-webkit-transform: rotate(45deg);
-				-webkit-transform-origin: 0% 0%;
-			}
-
-			.pawPrint .fill {
-				position: absolute;
-			}
-
-			.pawPrint span {
-				position: absolute;
-				text-align: center;
-				bottom: 0.99em;
-				width: 100%;
-				z-index: 5;
-				font-family: "Baumans", sans-serif;
-				color: white;
-				font-size: 2.2em;
-				text-transform: lowercase;
-			}
-
-			.pawPrint .fill.bottom {
-				bottom: 2em;
-				left: 4em;
-				width: 5em;
-				height: 2.85em;
-			}
-
-			.pawPrint .fill.top {
-				bottom: 3em;
-				left: 5.25em;
-				width: 2.5em;
-				height: 3em;
-			}
-
-			.pawPrint .corner.one {
-				bottom: 1.57em;
-				left: 4em;
-			}
-
-			.pawPrint .corner.two {
-				bottom: 1.57em;
-				left: 5em;
-			}
-
-			.pawPrint .corner.three {
-				bottom: 1.57em;
-				right: 3.57em;
-			}
-
-			.pawPrint .corner.four {
-				bottom: 1.57em;
-				right: 2.57em;
-			}
-
-			.pawPrint .toe::after {
-				width: 1.41421356237em;
-				height: 1.41421356237em;
-				content: '';
-				position: absolute;
-				top: -1em;
-				left: 1em;
-				transform: rotate(45deg);
-				transform-origin: 0% 0%;
-				-webkit-transform: rotate(45deg);
-				-webkit-transform-origin: 0% 0%;
-			}
-
-			.pawPrint .toe::before {
-				width: 1.41421356237em;
-				height: 1.41421356237em;
-				content: '';
-				position: absolute;
-				top: 2em;
-				left: 0em;
-				transform: rotate(-45deg);
-				transform-origin: 0% 0%;
-				-webkit-transform: rotate(-45deg);
-				-webkit-transform-origin: 0% 0%;
-			}
-
-			.outerContainer {
-				position: relative;
-				width: 13em;
-				height: 13em;
-				margin-right: 3em;
-				background: none;
-				font-size: 0.07692307692em;
-				display: inline-block;
-				animation: qrFadeIn 1s ease-out;
-				-webkit-animation: qrFadeIn 1s ease-out;
-				vertical-align: middle;
-			}
-
-			.blink {
-				animation: blink-animation 1s steps(5, start) infinite;
-				-webkit-animation: blink-animation 1s steps(5, start) infinite;
-			}
-
-			@keyframes blink-animation {
-				to {
-					visibility: hidden;
-				}
-			}
-
-			@-webkit-keyframes blink-animation {
-				to {
-					visibility: hidden;
-				}
-			}
-
-			span.name {
-				padding-top: 0;
-				cursor: default;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				-webkit-transform: translate(-50%, -50%);
-				position: absolute;
-				text-align: center;
-				/* left/right also looks cool here! */
-				width: 100%;
-				overflow: hidden;
-				z-index: 5;
-				font-family: "Baumans", sans-serif;
-				color: white;
-				font-size: 20vh;
-				text-transform: lowercase;
-			}
-
-			span.typed {
-				animation: type 0.85s steps(14, end);
-				-webkit-animation: type 0.85s steps(14, end);
-				overflow: hidden;
-				width: 6.9em;
-				display: inline-block;
-				vertical-align: text-bottom;
-				white-space: nowrap;
-			}
-
-			@keyframes fadeIn {
-				0% {
-					max-width: 1em;
-				}
-				15% {
-					max-width: 1em;
-					border-right: 0.05em solid white;
-					padding-right: 0.25em;
-				}
-				100% {
-					max-width: 100%;
-					border-right: 0em solid white;
-					padding-right: 0.0em;
-				}
-			}
-
-			@-webkit-keyframes fadeIn {
-				0% {
-					max-width: 1em;
-				}
-				15% {
-					max-width: 1em;
-					border-right: 0.05em solid white;
-					padding-right: 0.25em;
-				}
-				100% {
-					max-width: 100%;
-					border-right: 0em solid white;
-					padding-right: 0.0em;
-				}
-			}
-			
-			/* webkit transform hacks :( */
-			p, #disqus_thread {
-				-webkit-backface-visibility: hidden;
-				-webkit-transform-style: preserve-3d;
 			}
 
 			p {
@@ -649,10 +109,6 @@
 				animation: qrFadeIn 2s ease;
 				-webkit-animation: qrFadeIn 2s ease;
 			}
-
-			a:hover img {
-				bottom: 0.1em;
-			}
 			
 			.slide {
 				position: relative;
@@ -680,18 +136,6 @@
 				border-radius: 5px;
 			}
 
-			@keyframes type {
-				from {
-					width: 0;
-				}
-			}
-			
-			@-webkit-keyframes type {
-				from {
-					width: 0;
-				}
-			}
-
 			@keyframes qrFadeIn {
 				from {
 					opacity: 0;
@@ -717,8 +161,6 @@
 					filter: blur(0%);
 				}
 			}
-
-			.linkIconNav {}
 
 			.noselect {
 				-webkit-touch-callout: none;
@@ -814,6 +256,10 @@
 			    font-size: 0.85em !important;
 			}
 			
+			#frontPage.section .fp-tableCell {
+				vertical-align: top;
+			}
+			
 			.linkIconNav ul li.furAffinity:hover .fa-stack-1x.fa-paw, .linkIconNav ul li.furAffinity:hover .extraText {
 				color: rgb(246, 179, 28);
 				text-shadow: 0 0 1em rgba(246, 179, 28, 0.8);
@@ -839,69 +285,136 @@
 				background-size: 5em 15em;
 			}
 			
-			#disqus_thread {
-				max-height: 100%;
-				overflow-y: auto;
-				overflow-x: hidden;
-				left: 0;
-				right: 0;
+			.radarView {
+				min-width: 600px;
 				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				-webkit-transform: translateY(-50%);
-				padding: 0 1em;
+				right: 0;
+				height: 100%;
+			}
+			
+			.terminalView {
+				position: absolute;
+				height: 100%;
+				left: 0;
+				border: transparent none;
 			}
 
-			h1,
-			h2 {
-				font-family: "Exo 2", sans-serif;
-				position: absolute;
-				left: 0;
-				right: 0;
+			@font-face {
+				font-family: 'weather';
+				src: url('artill_clean_icons-webfont.eot');
+				src: url('artill_clean_icons-webfont.woff') format('woff'),
+					 url('artill_clean_icons-webfont.ttf') format('truetype'),
+					 url('artill_clean_icons-webfont.svg') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			#weather {
+				width: 60%;
+				min-width: 30em;
 				text-align: center;
-				color: white;
-				white-space: nowrap;
+				text-transform: uppercase;
+				font-family: sans-serif;
+				right: 10.42%;
+				float: right;
+				position: relative;
+				padding-bottom: 1em;
+				background: rgba(162, 164, 164, 0.82);
 			}
-
-			h1 {
-				top: -2em;
-				font-size: 2em;
+			
+			#weather .location {
+				display: none;
 			}
-
-			h2 {
-				bottom: -2.25em;
-				font-size: 1em;
-			}
-
-			h2:before,
-			h2:after {
-				content: "";
-				margin-right: -100%;
-			}
-
-			.contactCard {
-				width: auto;
+			
+			.weatherContainer {
 				position: absolute;
-				top: 50%;
-				left: 50%;
-				-webkit-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-				max-width: 90vw;
-				padding: 1em;
+				right: 0;
+				bottom: 4px;
 			}
 
-			.contactCard .cardContents {
-				height: 100%;
-				width: 100%;
+			i {
+			  color: #fff;
+			  font-family: weather;
+			  font-size: 150px;
+			  font-weight: normal;
+			  font-style: normal;
+			  line-height: 1.0;
+			  text-transform: none;
 			}
 
-			canvas.contentBackground {
-				position: absolute;
-				height: 100%;
-				width: 100%;
-				z-index: -1;
-				top: 0;
-				left: 0;
+			.icon-0:before { content: ":"; }
+			.icon-1:before { content: "p"; }
+			.icon-2:before { content: "S"; }
+			.icon-3:before { content: "Q"; }
+			.icon-4:before { content: "S"; }
+			.icon-5:before { content: "W"; }
+			.icon-6:before { content: "W"; }
+			.icon-7:before { content: "W"; }
+			.icon-8:before { content: "W"; }
+			.icon-9:before { content: "I"; }
+			.icon-10:before { content: "W"; }
+			.icon-11:before { content: "I"; }
+			.icon-12:before { content: "I"; }
+			.icon-13:before { content: "I"; }
+			.icon-14:before { content: "I"; }
+			.icon-15:before { content: "W"; }
+			.icon-16:before { content: "I"; }
+			.icon-17:before { content: "W"; }
+			.icon-18:before { content: "U"; }
+			.icon-19:before { content: "Z"; }
+			.icon-20:before { content: "Z"; }
+			.icon-21:before { content: "Z"; }
+			.icon-22:before { content: "Z"; }
+			.icon-23:before { content: "Z"; }
+			.icon-24:before { content: "E"; }
+			.icon-25:before { content: "E"; }
+			.icon-26:before { content: "3"; }
+			.icon-27:before { content: "a"; }
+			.icon-28:before { content: "A"; }
+			.icon-29:before { content: "a"; }
+			.icon-30:before { content: "A"; }
+			.icon-31:before { content: "6"; }
+			.icon-32:before { content: "1"; }
+			.icon-33:before { content: "6"; }
+			.icon-34:before { content: "1"; }
+			.icon-35:before { content: "W"; }
+			.icon-36:before { content: "1"; }
+			.icon-37:before { content: "S"; }
+			.icon-38:before { content: "S"; }
+			.icon-39:before { content: "S"; }
+			.icon-40:before { content: "M"; }
+			.icon-41:before { content: "W"; }
+			.icon-42:before { content: "I"; }
+			.icon-43:before { content: "W"; }
+			.icon-44:before { content: "a"; }
+			.icon-45:before { content: "S"; }
+			.icon-46:before { content: "U"; }
+			.icon-47:before { content: "S"; }
+
+			#weather h2 {
+			  margin: 0 0 8px;
+			  color: #fff;
+			  font-size: 100px;
+			  font-weight: 300;
+			  text-align: center;
+			  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+			}
+
+			#weather ul {
+			  margin: 0;
+			  padding: 0;
+			}
+
+			#weather li {
+			  background: #fff;
+			  background: rgba(255,255,255,0.90);
+			  padding: 20px;
+			  display: inline-block;
+			  border-radius: 5px;
+			}
+
+			#weather .currently {
+			  margin: 0 20px;
 			}
 		</style>
 	</head>
@@ -911,6 +424,7 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.min.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 		<script>
 			function imgIsLoaded(imgElement) {
 				$(imgElement).addClass("loaded");
@@ -925,52 +439,16 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.min.js"></script>
 
 		<div id="fullpage">
-			<div class="backgroundContainer">
-				<div class="atmosphere"></div>
-				<div class="starfield"></div>
-			</div>
-			<div class="section">
-				<span class="name noselect">
-					<div class="outerContainer">
-						<div class="corner topLeft"></div>
-						<div class="corner topRight"></div>
-						<div class="corner bottomLeft"></div>
-						<div class="corner bottomRight"></div>
-						<div class="edge left"></div>
-						<div class="edge top"></div>
-						<div class="edge right"></div>
-						<div class="edge bottom"></div>
-						<div class="innerContainer"></div>
-						<div class="pawPrint">
-							<div class="toe one"></div>
-							<div class="toe two"></div>
-							<div class="toe three"></div>
-							<div class="toe four"></div>
-							<div class="pawPad">
-								<div class="leftPad"></div>
-								<div class="rightPad"></div>
-								<div class="topPad"></div>
-								<div class="bottomCenterPad"></div>
-								<div class="bottomLeftPad"></div>
-								<div class="bottomLeftWallPad"></div>
-								<div class="bottomRightWallPad"></div>
-								<div class="bottomRightPad"></div>
-								<div class="corner one"></div>
-								<div class="corner two"></div>
-								<div class="corner three"></div>
-								<div class="corner four"></div>
-								<div class="fill top"></div>
-								<div class="fill bottom"></div>
-							</div>
-						</div>
-					</div>
-					<span class="typed">Space Northpaw</span><span class="typing blink">_</span><br><div class="imgContainer"><img onload="imgIsLoaded(this);" src="http://img.mrawr.net/Glaceon25.svg"></div><div class="qrContainer"><a href="#mowmow"><img onload="$(this).addClass('loaded');" src="http://img.mrawr.net/Unitag_QRCode_1463421391084.png"></a></div>
-				</span>
+			<div class="section" id="frontPage">
+				<iframe seamless src="http://st.atb.no/New/minskjerm/FST.aspx?visMode=2&cTit=Ila&c1=1&s1=16011192&sv1=&cn1=Ila%20%28mot%20sentrum%29&c2=1&s2=16010192&sv2=&cn2=Ila%20%28fra%20sentrum%29&template=1&cmhb=7c7c8c&cmhc=FFFFFF&cshb=7c7c8c&cshc=FFFFFF&arb=7c7c8c&rows=15&period=&" class="terminalView"></iframe>
+				<img class="radarView" onload="imgIsLoaded(this);" src="http://aa004xmu0m4dtdqty.api.met.no/weatherapi/radar/1.5?radarsite=central_norway;content=animation;type=reflectivity;size=normal">
+				<div class="weatherContainer">
+					<div id="weather"></div>
+				</div>
 			</div>
 			<div class="section">
 				<div class="slide">
-					<p>hi! i'm a web/glaceon/cat (snep!) enthusiast, and this is a glorious<s>ly stupid</s> test page of some kind. yes. there are some contact/social things down below in case that's what you came here for.</p>
-					<p>~space</p>
+					<img class="meteogramView" onload="imgIsLoaded(this);" src="http://www.yr.no/sted/Norge/S%C3%B8r-Tr%C3%B8ndelag/Trondheim/Trondheim/avansert_meteogram.png">
 				</div>
 				<div class="slide imageContainer">
 					<img data-src="img/DSC09937ccedit.jpg" onload="imgIsLoaded(this);">
@@ -991,55 +469,6 @@
 					<img data-src="img/DSC04768_cedit.jpg" onload="imgIsLoaded(this);">
 				</div>
 			</div>
-			<div class="section">
-				<div class="contactCard">
-					<h1>contact</h1>
-					<h2>social thingies</h2>
-					<canvas class="contentBackground"></canvas>
-					<div class="cardContents">
-						<nav class="linkIconNav">
-							<ul>
-								<li title="Home page"><a target="_BLANK" href="http://471.no"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-globe fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-								<li title="Telegram user"><a target="_BLANK" href="http://telegram.me/arctic_kitten"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-								<li class="furryNetwork" title="Furry Network user page"><a target="_BLANK" href="http://furrynetwork.com/space"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-paw fa-stack-1x fa-inverse"></i>
-								</span><span class="extraText">fn</span></a></li>
-								<li title="GitHub profile page"><a target="_BLANK" href="https://github.com/AudunVN"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-								<li title="DeviantArt profile page"><a target="_BLANK" href="http://ageira.deviantart.com/"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-								<li title="Steam profile page"><a target="_BLANK" href="http://steamcommunity.com/id/404_Not_Found"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-steam fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-								<li title="Twitter profile page"><a target="_BLANK" href="https://twitter.com/space471"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-								<li title="Skype account info"><a href="skype:space.error?userinfo"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-skype fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-								<li title="Email address (link)"><a href="mailto:space@471.no"><span class="fa-stack fa-lg">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-								</span></a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
 		<script>
 			$(document).ready(function() {
 				$(".name").fitText();
@@ -1050,95 +479,6 @@
 					fitToSectionDelay: 500,
 					animateAnchor: true
 				});
-
-				window.addEventListener("load", draw);
-				window.addEventListener("resize", draw);
-
-				function draw() {
-					var canvas = document.querySelector('canvas.contentBackground');
-					var canvasContainer = document.querySelector('.contactCard');
-					var oneEm = Math.floor(Number(getComputedStyle(canvasContainer, "").fontSize.match(/(\d*(\.\d*)?)px/)[1]));
-					canvas.width = Math.floor(canvasContainer.clientWidth);
-					canvas.height = Math.floor(canvasContainer.clientHeight);
-					var canvasPadding = 0.5 * oneEm;
-
-					if (canvas.getContext) {
-						var ctx = canvas.getContext('2d');
-
-						var gradient = ctx.createLinearGradient(0, 0, 170, 0);
-						gradient.addColorStop("0", "#408FEE");
-						gradient.addColorStop("1", "#0375EE");
-
-						ctx.shadowBlur = 0.5 * oneEm;
-						ctx.shadowColor = "#038AFF";
-
-						ctx.fillStyle = "#000";
-						ctx.strokeStyle = gradient;
-						ctx.lineWidth = 0.1 * oneEm;
-
-						ctx.moveTo(0 + canvasPadding, oneEm + canvasPadding);
-						ctx.lineTo(oneEm + canvasPadding, 0 + canvasPadding);
-						ctx.lineTo(canvas.width - oneEm - canvasPadding, 0 + canvasPadding);
-						ctx.lineTo(canvas.width - canvasPadding, oneEm + canvasPadding);
-						ctx.lineTo(canvas.width - canvasPadding, canvas.height - oneEm - canvasPadding);
-						ctx.lineTo(canvas.width - oneEm - canvasPadding, canvas.height - canvasPadding);
-						ctx.lineTo(oneEm + canvasPadding, canvas.height - canvasPadding);
-						ctx.lineTo(0 + canvasPadding, canvas.height - oneEm - canvasPadding);
-						ctx.lineTo(0 + canvasPadding, oneEm + canvasPadding);
-
-						ctx.fill();
-						ctx.stroke();
-					}
-				}
-
-				var starClassArray = ["O", "B", "A", "F", "F", "F", "G", "G", "G", "G", "G", "G", "G", "K", "K", "K", "K", "K", "K", "K", "K", "K", "K", "K", "K", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M", "M"];
-
-				function generateStarfield(starCount, containerSelector, avgFreq) {
-					for (i = 0; i < starCount; i++) {
-						x = Math.random() * 100;
-						y = Math.random() * 100;
-						magnitude = Math.random();
-						starClass = starClassArray[Math.floor(Math.random() * starClassArray.length)];
-						new Star(x, y, magnitude, starClass, i, containerSelector);
-					}
-					twinkleEvent(avgFreq, starCount);
-				}
-
-				function twinkleEvent(avgFreq, elementCount) {
-					if (!document.querySelector("body.scrolling")) {
-						// -> removing the class
-						var element = document.querySelector("#no" + Math.floor(Math.random() * elementCount));
-						element.classList.remove("twinkle");
-
-						// -> triggering reflow /* The actual magic */
-						// without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
-						element.offsetWidth = element.offsetWidth;
-
-						// -> and re-adding the class
-						element.classList.add("twinkle");
-					}
-					setTimeout(function() {
-						twinkleEvent(avgFreq, elementCount);
-					}, Math.random() * 1000 + 1000 / avgFreq);
-				}
-
-				function Star(x, y, magnitude, classString, number, containerSelector) {
-					var starObject = document.createElement("div");
-					var container = document.querySelector(containerSelector);
-					starObject.className = "star " + classString;
-					starObject.id = "no" + number;
-					starObject.style.left = x + "%";
-					starObject.style.top = y + "%";
-
-					starObject.style.opacity = magnitude;
-
-					starObject.style.position = "absolute"; 		
-					container.appendChild(starObject);
-				}
-
-				(function init() {
-					generateStarfield(300, '.starfield', 500000);
-				})();
 
 				function debounce(fn, delay) {
 					var timer = null;
@@ -1163,8 +503,53 @@
 
 				$(window).scroll(function() {
 					$("body").addClass("scrolling");
-				});
+				});		
 			});
+		</script>
+		<script>
+			function getWeather() {
+			  $.simpleWeather({
+				location: 'Trondheim, Norway',
+				woeid: '',
+				unit: 'c',
+				success: function(weather) {
+				  html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+				  html += '<ul><li class="location">'+weather.city+', '+weather.region+'</li>';
+				  html += '<li class="currently">'+weather.currently+'</li>';
+				  html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+			  
+				  $("#weather").html(html);
+				},
+				error: function(error) {
+				  $("#weather").html('<p>'+error+'</p>');
+				}
+			  });
+			}
+			
+			getWeather();
+				
+			function rescaleTerminal() {
+				$(".terminalView").width($(window).width() - $(".radarView").width() + "px");
+				$(".weatherContainer").width($(".radarView").width());
+			}
+			
+			$(window).resize(function() {
+				rescaleTerminal();
+			});
+			
+			rescaleTerminal();
+			
+			var radarSrc = document.querySelector(".radarView").src;
+			var meteogramSrc = document.querySelector(".radarView").src;
+
+			function updateWeather() {
+				document.querySelector(".radarView").src = radarSrc + "?" + Math.floor(Math.random() * 1000);
+				document.querySelector(".meteogramView").src = meteogramSrc + "?" + Math.floor(Math.random() * 1000);
+				getWeather();
+			}
+
+			var meteogramTimer = setInterval("updateWeather()",1800*1000);
+			var resizeTimer = setInterval("rescaleTerminal()",5000);
 		</script>
 		<!--<script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" />
