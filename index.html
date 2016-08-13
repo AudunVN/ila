@@ -341,6 +341,18 @@
 			  line-height: 1.0;
 			  text-transform: none;
 			}
+			
+			.docFrame {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: 0 auto;
+				padding: 0;
+				width: 89%;
+				height: 100%;
+			}
 
 			.icon-0:before { content: ":"; }
 			.icon-1:before { content: "p"; }
@@ -448,32 +460,17 @@
 			</div>
 			<div class="section">
 				<div class="slide">
+					<iframe class="docFrame" src="https://docs.google.com/document/d/1S9lxGZSaY8TMQ13TXI5PoDjLn8wIoaa94B6lLH7fPZs/edit" seamless></iframe>
+				</div>
+				<div class="slide imageContainer">
 					<img class="meteogramView" onload="imgIsLoaded(this);" src="http://www.yr.no/sted/Norge/S%C3%B8r-Tr%C3%B8ndelag/Trondheim/Trondheim/avansert_meteogram.png">
-				</div>
-				<div class="slide imageContainer">
-					<img data-src="img/DSC09937ccedit.jpg" onload="imgIsLoaded(this);">
-				</div>
-				<div class="slide imageContainer">
-					<img data-src="img/DSC06277ccc.jpg" onload="imgIsLoaded(this);">
-				</div>
-				<div class="slide imageContainer">
-					<img data-src="img/DSC02568edit.jpg" onload="imgIsLoaded(this);">
-				</div>
-				<div class="slide imageContainer">
-					<img data-src="img/DSC09327_cEdit.jpg" onload="imgIsLoaded(this);">
-				</div>
-				<div class="slide imageContainer">
-					<img data-src="img/IMGP0037cq.jpg" onload="imgIsLoaded(this);">
-				</div>
-				<div class="slide imageContainer">
-					<img data-src="img/DSC04768_cedit.jpg" onload="imgIsLoaded(this);">
 				</div>
 			</div>
 		<script>
 			$(document).ready(function() {
 				$(".name").fitText();
 				$('#fullpage').fullpage({
-					anchors: ['mow', 'mowmow', 'mowmowmow'],
+					anchors: ['wx', 'doc'],
 					scrollBar: true,
 					fitToSection: true,
 					fitToSectionDelay: 500,
