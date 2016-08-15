@@ -353,6 +353,13 @@
 				width: 89%;
 				height: 100%;
 			}
+			
+			.weatherContainer a {
+				height: 100%;
+				width: 100%;
+				display: block;
+				position: absolute;
+			}
 
 			.icon-0:before { content: ":"; }
 			.icon-1:before { content: "p"; }
@@ -456,6 +463,7 @@
 				<img class="radarView" onload="imgIsLoaded(this);" src="http://aa004xmu0m4dtdqty.api.met.no/weatherapi/radar/1.5?radarsite=central_norway;content=animation;type=reflectivity;size=normal">
 				<div class="weatherContainer">
 					<div id="weather"></div>
+					<a href="#mow/1"></a>
 				</div>
 			</div>
 			<div class="section">
